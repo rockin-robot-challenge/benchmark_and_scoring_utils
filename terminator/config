@@ -1,0 +1,61 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+    background_image = None
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+  [[rockin_log]]
+    [[[child0]]]
+      position = 0:27
+      type = Window
+      order = 0
+      parent = ""
+      size = 1280, 958
+    [[[child1]]]
+      labels = None, None
+      type = Notebook
+      order = 0
+      parent = child0
+    [[[child2]]]
+      position = 640
+      type = HPaned
+      order = 0
+      parent = child1
+    [[[child5]]]
+      position = 640
+      type = HPaned
+      order = 1
+      parent = child1
+    [[[terminal3]]]
+      profile = default
+      command = bash --rcfile ~/workspace/utils/tbmh_env
+      type = Terminal
+      order = 0
+      parent = child2
+    [[[terminal4]]]
+      profile = default
+      command = bash --rcfile ~/workspace/utils/tbmh_env
+      type = Terminal
+      order = 1
+      parent = child2
+    [[[terminal7]]]
+      profile = default
+      command = bash --rcfile ~/workspace/utils/tbmw_env
+      type = Terminal
+      order = 1
+      parent = child5
+    [[[terminal6]]]
+      profile = default
+      command = bash --rcfile ~/workspace/utils/tbmw_env
+      type = Terminal
+      order = 0
+      parent = child5
+[plugins]
