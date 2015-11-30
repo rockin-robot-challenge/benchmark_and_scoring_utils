@@ -30,7 +30,7 @@ if os.environ['ROCKIN_ENV'] == 'log@WORK':
 
 
 if os.environ['ROCKIN_ENV'] == 'log@HOME':
-	print colors.INFO + "log@HOME environment" + colors.END
+	print colors.INFO + "FBM1H environment" + colors.END
 	env_prefix = "log@HOME "
 	log_prefix = LOG_DIR + "log_home_mocap_"
 	log_size_growth = 50 * 1000
